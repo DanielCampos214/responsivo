@@ -1,0 +1,123 @@
+*{
+    font-family: 'Oswald', sans-serif; /* fonte*/
+    box-sizing: border-box; /* ter o tamanho designado pelo programador */
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}
+.container-left{
+    width: 60%;
+    display: inline-block;
+    padding-left: 136px;
+    padding-top: 380px;
+}
+iframe{
+    width:560px; 
+    height: 315px; 
+}
+button{
+    width: 269px;
+    height: 62px;
+    background: #9499EA;
+    border: none;
+    border-radius: 45px;
+    cursor: pointer;
+    margin-top: 13px;
+    outline: none;
+    
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: white;
+}
+button:hover{
+    opacity: .7;
+}
+button:active{
+    opacity: .5;
+}
+h1{
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 80px;
+    color: #5D5D7D;
+}
+.container-right{
+    display: inline-block;
+    background: rgba(93, 93, 125, 0.16);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    
+}
+img{
+    position: relative;
+    top: 20%;
+    right: 130px;
+}
+.link-header{
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 41px;
+    color: #5D5D7D;
+    margin-right: 47px;
+    cursor: pointer;
+}
+.link-header:nth-child(2){
+    opacity: .6;
+}
+.link-header:hover{
+    opacity: .7;
+}
+.link-header:active{
+    opacity: .4;
+}
+@media screen and (max-width: 900px){
+   .container-right{
+    display: block;
+    background: rgba(93, 93, 125, 0.16);
+    width: 100vw;
+    height: 100vh;
+    
+   } 
+   .link-header{
+    display: none;
+   }
+   img{
+    position: static;
+    max-width: 90%;
+    margin: 20px;
+   }
+   .container-left{
+    margin: 0%;
+    padding: 0;
+    width: 100vw;
+    height: 30vh;
+   }
+   h1{
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 30px;
+    color: #5D5D7D;
+    text-align: center;
+    display: block;
+   }
+   iframe{
+    max-width: 50vw;
+    max-height: 20vh;
+    margin: 15px auto;
+    display: block;
+   }
+   button{
+    width: 169px;
+    height: 32px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    
+}
+}
